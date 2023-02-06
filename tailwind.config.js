@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
+          25:"#FBF9FE",
+          50:"#F6F1FE",
           100: "#E5D7FE",
           200: "#CBB0FD",
           300: "#AC88F9",
@@ -23,6 +25,8 @@ module.exports = {
           900: "#1A0B71",
       },
         succes: {
+          25:"#FAFCF7",
+          50:"#F8FCEF",
           100: "#F4FCCD",
           200: "#E6FA9C",
           300: "#D0F16A",
@@ -34,6 +38,8 @@ module.exports = {
           900: "#3A6402",
       },
         info: {
+          25:"#F9FCFE",
+          50:"#F1F9FE",
           100: "#CBFCFE",
           200: "#98F3FD",
           300: "#64E1FA",
@@ -45,6 +51,8 @@ module.exports = {
           900: "#003172",
       },
         warning: {
+          25:"#FFFDFA",
+          50:"#FFFBF2",
           100: "#FFF2CE",
           200: "#FFE19D",
           300: "#FFCC6D",
@@ -56,6 +64,8 @@ module.exports = {
           900: "#7A3102",
       },
         danger: {
+          25:"#FFFCFA",
+          50:"#FFF6F2",
           100: "#FFE4D3",
           200: "#FFC2A8",
           300: "#FF997C",
@@ -65,7 +75,19 @@ module.exports = {
           700: "#B71326",
           800: "#930C27",
           900: "#7A0728",
-      },},
+      },neutral: {
+        25:"#FCFCFD",
+        50:"#F9FAFB",
+        100: "#F2F4F7",
+        200: "#EAECF0",
+        300: "#D0D5DD",
+        400: "#98A2B3",
+        500: "#667085",
+        600: "#475467",
+        700: "#344054",
+        800: "#1D2939",
+        900: "#101828",
+    },},
     },
   },
   plugins: [],
