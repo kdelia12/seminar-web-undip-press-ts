@@ -50,7 +50,11 @@ export default function Login() {
                             </div>
                             <div className="flex -mx-3 pt-8">
                                 <div className="w-full px-3 mb-12">
-                                    <button className="block w-full py-2 bg-primary-400 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">MASUK</button>
+                                    <button className="flex flex-row justify-between block w-full py-2 bg-primary-400 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
+                                        MASUK
+                                        <img className="pt-1" src='/arrow.svg'/>
+                                    </button>
+                                        
                                 </div>
                             </div>
                             <div className="flex space-x-8 justify-center">
