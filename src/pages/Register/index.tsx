@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Register() {
     return (
         <>
@@ -64,7 +66,9 @@ export default function Register() {
                             </div>
                             <div className="flex space-x-8 justify-center">
                                 <p className="text-white">Sudah Punya Akun ?</p>
-                                <button className="text-info-50 font-bold" id="daftar">Login</button>
+                                <button className="text-info-50 font-bold" id="daftar">
+                                    <Link href="/Login">Login</Link>
+                                </button>
                             </div>            
                         </div>           
                         <div className="block w-1/2 bg-white py-10 px-10 flex justify-center">
