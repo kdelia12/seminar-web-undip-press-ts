@@ -32,7 +32,7 @@ export default function Register() {
                                         <label className="text-xs text-neutral-25 font-semibold px-1">No HP</label>
                                         <div className="flex">
                                             <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-phone-outline text-gray-400 text-lg"></i></div>
-                                            <input id="no" type="tel" className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="085780653365"/>
+                                            <input id="nomer" type="tel" className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="085780653365"/>
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ export default function Register() {
                             </div>
                             <div className="flex -mx-3 pt-8">
                                 <div className="w-full px-3 mb-12">
-                                    <button className="flex flex-row justify-between block w-full py-2 bg-primary-400 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
+                                    <button id="daftar" className="flex flex-row justify-between block w-full py-2 bg-primary-400 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">
                                         DAFTAR
                                         <img className="pt-1" src='/arrow.svg'/>
                                     </button>
