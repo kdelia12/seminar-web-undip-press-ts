@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Login() {
     return (
         <>  
@@ -59,7 +61,9 @@ export default function Login() {
                             </div>
                             <div className="flex space-x-8 justify-center">
                                 <p className="text-white">Belum Punya akun ?</p>
-                                <button className="text-info-50 font-bold" id="daftar">Daftar</button>
+                                <button className="text-info-50 font-bold" id="daftar">
+                                    <Link href={"/Register"}>Daftar</Link>
+                                </button>                              
                             </div>            
                         </div>           
                         <div className="block w-1/2 bg-white py-10 px-10 flex justify-center">
