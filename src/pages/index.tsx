@@ -9,35 +9,107 @@ export default function Home() {
     <>
       <Header/>
       {/* TOP Part */}
-      <div className='bg-primary-500 p-28 flex flex-row gap-60'>
-        <div className='w-1/4'>
+      <div className='bg-primary-500 p-28 flex flex-col xl:flex-row gap-60'>
+      {/* Left Side */}
+        <div className='flex-1'>
           <h1 className='text-5xl text-white font-semibold'>Tingkatkan pengetahuanmu melalui seminar UNDIP</h1>
           <h2 className='mt-4 text-lg text-white font-normal'>Bergabunglah dengan Seminar UNDIP, di mana kamu akan mendapat kesempatan untuk belajar dari para ahli industri dan pemikir terkemuka di bidangmu.</h2>
-          <Link href="/signin"><button className="px-4 py-2 text-white">Sign In</button></Link>
+          <Link href="/Login"><button className="mt-4 px-5 py-3 text-white rounded-lg bg-primary-300">Sign In</button></Link>
         </div>
-        <img src="/homeasset.svg" alt="" />
+        {/* Right Side */}
+        <img className='hidden xl:block mt-12 xl:mt-0' src="/homeasset.svg" alt="" />
       </div>
+
       {/* Bottom Part */}
+      {/* Upcoming Seminar */}
       <div className='bg-white px-28 py-24 flex flex-col justify-center gap-16'>
-        <div className=''>
+        <div className='gap-16'>
           <h1 className='text-4xl font-semibold flex justify-center'>Upcoming Seminar</h1>
-          <h2 className='w-8 mt-7 text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h2>
+          <h2 className='flex justify-center mt-7 text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h2>
         </div>
-        
         <div className='flex flex-row justify-between'>
-          <div className='w-1 rounded overflow-hidden shadow-lg'>
-            <img src="/homecard.svg" alt="" />
-            <div className='p-5 flex-col gap-5 w-0'>
-              <h2>
-                Technology
-              </h2>
-              <h3 className='truncate'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-              </h3>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
           </div>
         </div>
-        
+      </div>
+      {/* Upcoming Seminar */}
+      <div className='bg-white px-28 pb-24 flex flex-col justify-center gap-16'>
+        <div className='gap-16'>
+          <h1 className='text-4xl font-semibold flex justify-center'>Past Seminar</h1>
+          <h2 className='flex justify-center mt-7 text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h2>
+        </div>
+        <div className='flex flex-row justify-between'>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+          {/* Card */}
+          <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
+            <a href="#">
+              <img className="rounded-t-lg h-64 object-cover" src="/homecard.svg" alt="" />
+            </a>
+            <div className="p-5">
+              <a href="#">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black">Technology</h5>
+              </a>
+              <p className="mb-3 font-normal text-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer/>
     </>
