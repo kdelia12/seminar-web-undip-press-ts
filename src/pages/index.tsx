@@ -9,16 +9,19 @@ export default function Home() {
     <>
       <Header/>
       {/* TOP Part */}
-      <div className='bg-primary-500 p-28 flex flex-col xl:flex-row gap-60'>
-      {/* Left Side */}
-        <div className='flex-1'>
-          <h1 className='text-5xl text-white font-semibold'>Tingkatkan pengetahuanmu melalui seminar UNDIP</h1>
-          <h2 className='mt-4 text-lg text-white font-normal'>Bergabunglah dengan Seminar UNDIP, di mana kamu akan mendapat kesempatan untuk belajar dari para ahli industri dan pemikir terkemuka di bidangmu.</h2>
-          <Link href="/Login"><button className="mt-4 px-5 py-3 text-white rounded-lg bg-primary-300 hover:bg-primary-600 focus:bg-primary-600">Sign In</button></Link>
+      <div className='bg-primary-500 p-28'>
+        <div className=' container flex flex-row justify-between mx-auto gap-60'>
+        {/* Left Side */}
+          <div className='flex-1'>
+            <h1 className='text-5xl text-white font-semibold'>Tingkatkan pengetahuanmu melalui seminar UNDIP</h1>
+            <h2 className='mt-4 text-lg text-white font-normal'>Bergabunglah dengan Seminar UNDIP, di mana kamu akan mendapat kesempatan untuk belajar dari para ahli industri dan pemikir terkemuka di bidangmu.</h2>
+            <Link href="/Login"><button className="mt-4 px-5 py-3 text-white rounded-lg bg-primary-300 hover:bg-primary-600 focus:bg-primary-600">Sign In</button></Link>
+          </div>
+          {/* Right Side */}
+          <img className='hidden xl:block mt-12 xl:mt-0' src="/homeasset.svg" alt="" />
         </div>
-        {/* Right Side */}
-        <img className='hidden xl:block mt-12 xl:mt-0' src="/homeasset.svg" alt="" />
       </div>
+      
 
       {/* Bottom Part */}
       {/* Upcoming Seminar */}
@@ -27,7 +30,7 @@ export default function Home() {
           <h1 className='text-4xl font-semibold flex justify-center'>Upcoming Seminar</h1>
           <h2 className='flex justify-center mt-7 text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h2>
         </div>
-        <div className='flex flex-row justify-between'>
+        <div className='container flex flex-wrap justify-between mx-auto'>
           {/* Card */}
           <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
             <a href="#">
@@ -72,7 +75,7 @@ export default function Home() {
           <h1 className='text-4xl font-semibold flex justify-center'>Past Seminar</h1>
           <h2 className='flex justify-center mt-7 text-lg font-normal'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</h2>
         </div>
-        <div className='flex flex-row justify-between'>
+        <div className='container flex flex-wrap justify-between mx-auto'>
           {/* Card */}
           <div className="max-w-xs bg-white border border-transparent rounded-lg shadow">
             <a href="#">
