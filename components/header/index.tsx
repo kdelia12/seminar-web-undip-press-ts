@@ -10,7 +10,7 @@ export default function Header() {
         <div className="container flex flex-wrap items-center justify-between mx-auto">
             <img src="/logo.svg" alt="logo" />
             <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
-              <Link href="/" className="pr-5 pt-3 text-white ">Home</Link>
+              <Link href="/" className="pr-5 pt-3 text-white">Home</Link>
               <Link href="/about" className="px-5 py-3 text-white ">All Seminar</Link>
               <Link href="/contact" className="px-5 py-3 text-white ">Contact</Link>
               <Link href="/Login"><button className="px-5 py-3 text-white rounded-lg bg-primary-300 hover:bg-primary-600 focus:bg-primary-600">Sign In</button></Link>
