@@ -4,11 +4,13 @@ import Sidebar_2 from 'components/Sidebar_2'
 export default function User_Dashboard_Home() {
   return (
     <>
-        <div className="flex flex-row">
-            <Sidebar_2/>
+        <div className="flex">
+            <aside className="h-screen sticky top-0">
+                <Sidebar_2/>
+            </aside>
             <div className="p-8 flex-col space-y-6 w-full">
                 <h1 className="text-3xl font-semibold">Selamat Datang, User</h1>
-                <div className="flex flex-row space-x-4 mx-auto p-5 items-center bg-danger-100 rounded-xl ">
+                <div className="flex flex-row space-x-4 mx-auto p-5 items-center bg-danger-100 rounded-xl">
                     <img src="../icon/warning.svg" alt="" className="self-start" />
                     <div className="flex flex-col space-y-4">
                         <h5 className="text-md font-semibold tracking-tight text-black">Pemberitahuan</h5>
@@ -19,7 +21,7 @@ export default function User_Dashboard_Home() {
                     </div>
                 </div>
                 <h2 className="text-2xl font-semibold">Seminar Yang Diikuti</h2>    
-                <div className="flex flex-row md:flex-row sm:flex-col justify-between">  
+                <div className="flex flex-col gap-y-4 md:flex-row lg:flex-row md:space-x-4 lg:space-x-4">  
                     {/* Card */}
                     <div className="max-w-xs rounded-xl overflow-hidden shadow-lg">
                         <img src="/homecard.svg" alt="Placeholder" className="w-full" />
