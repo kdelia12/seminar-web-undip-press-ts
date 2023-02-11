@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function Sidebar_2() {
   const [showSidebar, setShowSidebar] = useState(false)
   return (
-    <div className={`sidebar bg-primary-500 overflow-hidden border-r 
+    <div className={`sidebar bg-primary-500 border-r 
                    ${showSidebar ? "w-96 bg-primary-500 shadow-lg ease-in-out duration-300 " : "w-[7.5rem] ease-in-out duration-300"}`}>  
         <div className="flex h-screen flex-col justify-between pt-2 pb-6">
             <div>
