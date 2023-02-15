@@ -71,7 +71,7 @@ export default function Register() {
                                 </button>
                             </div>            
                         </div>           
-                        <div className="block w-1/2 bg-white py-10 px-10 flex justify-center">
+                        <div className="hidden sm:block md:w-1/2 sm:bg-white sm:py-10 sm:px-10 sm:flex sm:justify-center">
                             <img src='/login.svg'/>
                         </div>
                     </div>
