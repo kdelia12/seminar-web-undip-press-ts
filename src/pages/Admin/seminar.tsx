@@ -14,7 +14,7 @@ export default function Seminar(){
                         {/* Card */}
                         <Link href="/Admin/seminar" className="w-fit flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl bg-neutral-300 hover:bg-neutral-400">
                             <div className="flex flex-row items-center justify-between py-7 px-[4.188rem] leading-normal">
-                                <img src="/seminar.svg" alt="" />
+                                <img src="/icon/seminar.svg" alt="" />
                                 <h5 className="ml-3 text-2xl font-bold tracking-tight text-black">Buat Seminar Baru</h5>
                             </div>
                         </Link>
@@ -27,7 +27,7 @@ export default function Seminar(){
                                     <div className="relative w-80">
                                         <input className="block p-2.5 w-full z-20 text-sm text-neutral-500 rounded-lg border-neutral-500 border-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Search"/>
                                         <button type="submit" className="absolute top-0 right-0 mr-1 p-2.5 text-sm font-medium text-white">
-                                            <img src="/search.svg" alt="" />
+                                            <img src="/icon/search.svg" alt="" />
                                         </button>
                                     </div>
                                 </div>
@@ -50,8 +50,8 @@ export default function Seminar(){
                                         <h2>Tanggal Diselenggarakan</h2>
                                         <h2>02 Januari 2023</h2>
                                         <div className="flex flex-row gap-2.5 justify-end">
-                                            <img src="/edit.svg" alt="" />
-                                            <img src="/delete.svg" alt="" />
+                                            <button><img src="/icon/edit.svg" alt="" /></button>
+                                            <button><img src="/icon/delete.svg" alt="" /></button>
                                         </div>
                                     </div>
                                 </div>
@@ -73,8 +73,8 @@ export default function Seminar(){
                                         <h2>Tanggal Diselenggarakan</h2>
                                         <h2>02 Januari 2023</h2>
                                         <div className="flex flex-row gap-2.5 justify-end">
-                                            <img src="/edit.svg" alt="" />
-                                            <img src="/delete.svg" alt="" />
+                                            <button><img src="/icon/edit.svg" alt="" /></button>
+                                            <button><img src="/icon/delete.svg" alt="" /></button>
                                         </div>
                                     </div>
                                 </div>
