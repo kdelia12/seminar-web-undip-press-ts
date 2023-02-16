@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Sidebar_2() {
@@ -19,34 +20,34 @@ export default function Sidebar_2() {
                 </div>
                 <ul className="mt-6 space-y-2 tracking-wide px-8">
                     <li className="min-w-max">
-                        <a href="/Admin" aria-label="dashboard" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
+                        <Link href="/Admin" aria-label="dashboard" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
                             <img src='../icon/home.svg'/>
                             <span className={`${showSidebar ? "" : "hidden"} group-hover:text-gray-700`}>Home</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="min-w-max">
-                        <a href="#" className="bg group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
+                        <Link href="/Admin/seminar" className="bg group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
                             <img src='../icon/presentation.svg'/>
                             <span className={`${showSidebar ? "" : "hidden"} group-hover:text-gray-700`}>Manajemen Seminar</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="min-w-max">
-                        <a href="#" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
+                        <Link href="/Admin/sertifikat" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
                             <img src='../icon/certificate.svg'/>
                             <span className={`${showSidebar ? "" : "hidden"} group-hover:text-gray-700`}>Manajemen Sertifikat</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="min-w-max">
-                        <a href="#" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
-                            <img src='../chart-bar.svg'/>
+                        <Link href="/Admin/laporan" className="group flex items-center space-x-4 rounded-md px-4 py-3 text-white hover:bg-primary-400">
+                            <img src='../icon/chart-bar.svg'/>
                             <span className={`${showSidebar ? "" : "hidden"} group-hover:text-gray-700`}>Laporan dan Analitik</span>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
             <div className="w-max -mb-3">
                 <a href="#" className="group flex items-center space-x-4 rounded-md px-9 py-2 text-gray-600">
-                    <img src="./face.png" className="w-10 h-10 rounded-full"/>
+                    <img src="/face.png" className="w-10 h-10 rounded-full"/>
                     <div className={`${showSidebar ? "" : "hidden"} flex flex-col`}>
                         <span className="text-white font-bold">User</span>
                         <span className="text-white">user@gmail.com</span>
@@ -55,5 +56,5 @@ export default function Sidebar_2() {
             </div>
         </div>
     </div>
-  )
+  );
 }
