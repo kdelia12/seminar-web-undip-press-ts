@@ -1,7 +1,31 @@
 import Link from 'next/link'
 import Sidebar_2 from 'components/Sidebar_2'
+import { useEffect } from 'react';
+import axios from 'axios';
+import router, { useRouter } from 'next/router';
+import { useState } from 'react';
 
 export default function User_Dashboard_Home() {
+    const [user, setUser] = useState(null);
+    useEffect(() => {
+        const token = localStorage.getItem('access_token');
+        if (!token) {
+          router.push('/');
+          return;
+        }
+        axios.get('http://127.0.0.1:8000/api/user', { headers: { Authorization: `${token}`, } })
+          .then(response => {
+            const user = response.data;
+            setUser(user);
+            if (user.role !== 'user') {
+              router.push('/');
+            }
+          })
+          .catch(error => {
+            console.log(error);
+            router.push('/');
+          });
+      }, []);
   return (
     <>
         <div className="flex">
@@ -9,7 +33,7 @@ export default function User_Dashboard_Home() {
                 <Sidebar_2/>
             </aside>
             <div className="p-8 flex-col space-y-6 w-full">
-                <h1 className="text-3xl font-semibold">Selamat Datang, User</h1>
+                <h1 className="text-3xl font-semibold">Selamat Datang, {user && user.name}</h1>
                 <div className="flex flex-row space-x-4 mx-auto p-5 items-center bg-danger-100 rounded-xl">
                     <img src="../icon/warning.svg" alt="" className="self-start" />
                     <div className="flex flex-col space-y-4">

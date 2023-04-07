@@ -50,7 +50,11 @@ export default function Header() {
             <div className={`md:flex ${isOpen ? 'block' : 'hidden'}`}>
               <Link href="/" className="pr-5 pt-3 text-white">Home</Link>
               <Link href="/about" className="px-5 py-3 text-white ">All Seminar</Link>
-              <Link href="/contact" className="px-5 py-3 text-white ">Contact</Link>
+              {user && user.role === 'admin' ? (
+              <Link href="/admin" className="px-5 py-3 text-white ">Dashboard</Link>
+            ) : (
+              <Link href="/user" className="px-5 py-3 text-white ">Dashboard</Link>
+            )}
               {user ? (
               <button className='px-5 py-3 text-white rounded-lg bg-primary-300 hover:bg-primary-600 focus:bg-primary-600'onClick={handleLogout}>Logout</button>
             ) : (

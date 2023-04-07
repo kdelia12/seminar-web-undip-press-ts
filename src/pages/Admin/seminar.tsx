@@ -13,7 +13,7 @@ export default function Seminar(){
                     <div className="container flex flex-row p-2.5 gap-5">
                         <div className="w-[35.125rem] flex flex-col gap-[1.875rem]">
                             {/* Card */}
-                            <Link href="/Admin/Seminar/Create" className="w-full flex justify-center bg-primary-300 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-primary-400">
+                            <Link href="/admin/Seminar/Create" className="w-full flex justify-center bg-primary-300 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-primary-400">
                                 <div className="flex flex-row items-center py-7 px-[4.188rem] leading-normal">
                                     <img src="/icon/seminar.svg" alt="" />
                                     <h5 className="ml-3 text-2xl font-bold tracking-tight text-black">Buat Seminar Baru</h5>
