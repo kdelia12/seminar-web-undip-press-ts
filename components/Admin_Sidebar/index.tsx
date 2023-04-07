@@ -72,7 +72,7 @@ export default function Sidebar_2() {
                 </ul>
             </div>
             <div className="w-max -mb-3">
-                <a href="#" className="group flex items-center space-x-4 rounded-md px-9 py-2 text-gray-600">
+                <a href="#" className="group flex items-center space-x-4 roundcced-md px-9 py-2 text-gray-600">
                     <img src="/face.png" className="w-10 h-10 rounded-full"/>
                     <div className={`${showSidebar ? "" : "hidden"} flex flex-col`}>
                         <span className="text-white font-bold">User</span>
